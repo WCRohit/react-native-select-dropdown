@@ -69,6 +69,7 @@ export const useLayoutDropdown = (data, dropdownStyle) => {
         maxHeight: DROPDOWN_MAX_HEIGHT,
       },
       ...getPositionIfKeyboardIsOpened(),
+      top: (height - dropdownHEIGHT) / 2
     };
   }, [JSON.stringify(dropdownStyle), JSON.stringify(dropdownCalculatedStyle), keyboardHeight, dropdownHEIGHT]);
 
